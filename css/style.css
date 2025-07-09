@@ -323,7 +323,7 @@
   .right-side {
     height: auto !important;
   }
-}
+
 #projects {
   margin-top: 0 !important;
   padding-top: 2em;
@@ -421,3 +421,4 @@
     width: 100%;
   }
 
+}
