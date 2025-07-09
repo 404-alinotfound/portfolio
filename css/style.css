@@ -108,13 +108,31 @@
     display: flex;
     align-items: right;
     padding-left: 0em;
-    gap: 0em;
+    gap: 2em;
     }
 
     .social {
     display: flex;
     gap: 0.2em;
     }
+    .resume {
+  margin-top: 1.5em;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #00ff80;
+  background: transparent;
+  border: 2px solid #00ff80;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume:hover {
+  background-color: #00ff80;
+  color: black;
+  transform: scale(1.05);
+}
 
     section {
     scroll-margin-top: 2em;
@@ -312,7 +330,16 @@
  body{
   background-color: black;
  }
- 
+
+.profession {
+  padding-left: 0 !important;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1em;
+  width: 100%;
+  display: block;
+}
+
    .hero {
     padding-top: 1em !important;
     padding-bottom: 0 !important;
@@ -367,10 +394,6 @@
     height: 4em;
   }
 
-  .profession {
-    font-size: 0.9em;
-    text-align: center;
-  }
 .project-container {
     display:flex;
     flex-direction: row;
@@ -420,5 +443,23 @@
   .progress-container {
     width: 100%;
   }
+  
+  .resume {
+  margin-top: 2em;
+  padding: 0.75em 1.5em;
+  font-size: 0.9em;
+  color: #00ff80;
+  background: transparent;
+  border: 2px solid #00ff80;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume:hover {
+  background-color: #00ff80;
+  color: black;
+  transform: scale(1.05);
+}
 
 }
