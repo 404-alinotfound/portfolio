@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,19 +12,25 @@
 </head>
 <body>
     <!-- NAVBAR -->
-     <div class="navbar">
-<nav>
-  <a href="index.html"><img class="logo" src="img/logo.png" alt="AA Logo"></a>
-
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+<!-- DESKTOP NAVBAR -->
+<div class="navbar desktop-nav">
+  <nav>
+    <a href="index.html"><img class="logo" src="img/logo.png" alt="AA Logo"></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 </div>
+
+<!-- MOBILE NAVBAR -->
+<nav class="nav-mobile-only">
+  <img class="logo" src="img/logo.png" alt="AA Logo" />
+</nav>
+
 <!-- HOME -->
 <section id="home" class="hero">
   <div class="left-side">
@@ -34,7 +40,7 @@
   <div class="right-side">
     <h1 class="my-name" style="display: inline;">Hi! I'm </h1>
     <h1 class="my-name rainbow-text" style="display: inline;">Abdul Ali</h1>
-    <h2>Full Stack Web Developer</h2>
+    <h2 class="profession">Full Stack Web Developer</h2>
     <div class="socials-bar">
  
     <i class="social"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></i>
@@ -52,6 +58,7 @@
     <div>
     <h2 class="heading">Projects</h2>
     </div>
+    <div class="project-slider-wrapper">
     <div class="project-container">
         <div class="project-card">
             <img src="img/placeholder.png" alt="project1">
@@ -83,6 +90,7 @@
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel. Similique quidem voluptas dolor accusantium laboriosam sequi eos quisquam qui nemo sunt earum labore, saepe quaerat quae illo ut tenetur!</h3>
             <a class="project-link" href="#">Check it out!</a>
         </div>
+    </div>
     </div>
  </section>
  <!-- SKILLS -->
