@@ -1,52 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Code+Latin:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
-body{
-        background-image:url("../img/bg.png");
-      background-size: cover;
+body {
+  background-image: url("../img/bg.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  font-family: sans-serif; 
-  color: white; 
+  font-family: sans-serif;
+  color: white;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #071c26;
+}
+
 .logo {
-    width: 6em;
-    height: 6em;
+  width: 6em;
+  height: 6em;
 }
+
 .navbar nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 0em 2em;
 }
 
 .nav-links {
   display: flex;
-  gap: 14em; 
+  gap: 14em;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #ffffff;
-  font-weight: normal;
   font-family: "Edu QLD Hand";
+  font-weight: 700;
   font-size: large;
 }
+
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em;
+  padding-top: 6em;
 }
 
-.left-side, .right-side {
+.left-side,
+.right-side {
   flex: 1;
-  
   padding: 2em;
 }
 
@@ -63,49 +77,52 @@ body{
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-
-.my-name{
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
-    font-size: 3em;
+.my-name {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 3em;
 }
+
 @keyframes colorPulse {
-  0%   { color: #d9ff00; }
-  25%  { color: #e87272; }
-  50%  { color: #8abbd5; }
-  75%  { color: #096767; }
+  0% { color: #d9ff00; }
+  25% { color: #e87272; }
+  50% { color: #8abbd5; }
+  75% { color: #096767; }
   100% { color: #cbee00; }
 }
 
 .rainbow-text {
   animation: colorPulse 6s infinite;
 }
-.socials-bar{
+
+.socials-bar {
   display: flex;
   align-items: right;
   padding-left: 0em;
   gap: 0em;
-  /* border-style: double; */
 }
-.social{
 
+.social {
   display: flex;
-  gap: 0.2em; 
+  gap: 0.2em;
 }
 
 section {
+  scroll-margin-top: 2em;
   padding: 3em 2em;
   min-height: 80vh;
 }
-.heading{
-text-align: center;
-font-family: Poppins, sans-serif;
-font-size: 3em;
+
+.heading {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 3em;
 }
-.projects-grid {
+
+.project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -115,14 +132,75 @@ font-size: 3em;
 
 .project-card {
   background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #00ff80;
+  border: 2px solid #159b5874;
   padding: 1em;
   width: 300px;
   border-radius: 10px;
   text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
 }
 
 .project-card img {
   width: 100%;
   border-radius: 5px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: white;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 50em;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.skill-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.progress-container {
+  background-color: #000;
+  border: 2px solid #00ff80;
+  border-radius: 20px;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #00ff80;
+  border-radius: 20px 0 0 20px;
+  transition: width 0.4s ease-in-out;
 }
