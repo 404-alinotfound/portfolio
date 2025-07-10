@@ -4,9 +4,15 @@
     scroll-behavior: smooth;
     }
     html, body {
-    overflow-x: hidden;
+    overflow-x: hidden;;
     }
-
+.element {
+  overflow-y: scroll; /* Allows scrolling but hides the scrollbar */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 
     body {
     background-image: url("../img/bg.png");
@@ -50,8 +56,8 @@
     text-decoration: none;
     color: #ffffff;
     font-family: "Edu QLD Hand";
-    font-weight: 700;
-    font-size: large;
+    font-weight: 300;
+    font-size: 1.5em;
     }
     .nav-mobile-only{
       display: none;
